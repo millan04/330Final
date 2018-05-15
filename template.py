@@ -15,10 +15,7 @@ def login():
 	else:
 		return render_template('login.html', message = " ")
 
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 @app.route('/processform')
 def procform():
 	key = 'AIzaSyCANwUbNqn7nOnqcwUG2p2PX5O0cg7sINE'
