@@ -15,11 +15,6 @@ def login():
 	else:
 		return render_template('login.html', message = "Incorrecct Username or Password")
 
-	if (user_name in users) and (users[user_name] == password):# and isinstance(not_robot, str):
-		return render_template('display.html')
-	else:
-		return render_template('login.html', message = users)
-
 @app.route('/processform')
 def procform():
 	key = 'AIzaSyCANwUbNqn7nOnqcwUG2p2PX5O0cg7sINE'
